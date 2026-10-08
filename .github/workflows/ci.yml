@@ -1,0 +1,8 @@
+name: brandshop-ci
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Run Brandshop checks"
